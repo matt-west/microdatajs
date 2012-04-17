@@ -176,6 +176,10 @@ test('data', function() {
   testStringReflection($('<data itemprop></data>'), 'value', 'itemValue', 'foo');
 });
 
+test('time', function() {
+  testStringReflection($('<time itemprop></time>'), 'datetime', 'itemValue', '2012-05-31');
+});
+
 module('jQuery.microdata.json');
 
 test('JSON extraction', function() {
