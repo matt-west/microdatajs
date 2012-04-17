@@ -153,6 +153,8 @@
       return resolve(elm, 'data');
     case 'DATA':
       return this.attr('value') || '';
+    case 'TIME':
+      return this.attr('datetime') || '';
     default:
       return this.text();
     }
